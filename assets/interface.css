@@ -1,0 +1,233 @@
+:root {
+  --ink: #0b2855;
+  --muted: #435b76;
+  --line: #d7e6f7;
+  --blue: #075dbf;
+}
+
+[data-testid="stMainBlockContainer"] {
+  max-width: 82rem;
+  padding-top: 4.75rem;
+  padding-bottom: 3.25rem;
+}
+
+[data-testid="stSidebar"] {
+  border-right: 1px solid var(--line);
+}
+
+.st-key-landing-hero {
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  background: linear-gradient(130deg, #eaf4ff, #fff 70%);
+  padding: clamp(1.3rem, 3.6vw, 3rem);
+  box-shadow: 0 16px 45px #174d8a0e;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin: 0;
+  padding: .34rem .7rem;
+  border: 1px solid #cfe3fd;
+  border-radius: 999px;
+  background: #fff;
+  color: #124d92;
+  font-size: .81rem;
+  font-weight: 750;
+}
+
+.st-key-landing-hero h1 {
+  margin: .8rem 0 .85rem;
+  padding: 0;
+  color: var(--ink);
+  font-size: clamp(2.2rem, 4.4vw, 4.1rem);
+  font-weight: 800;
+  letter-spacing: -.065em;
+  line-height: 1.12;
+}
+
+.hero-copy {
+  max-width: 24rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.06rem;
+  line-height: 1.75;
+  word-break: keep-all;
+}
+
+.st-key-landing-hero [data-testid="stImage"] img {
+  border: 1px solid #dceafa;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 12px 28px #174d8a17;
+}
+
+.workflow-top, .workspace-heading, .sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+
+.workflow-top, .sidebar-title {
+  justify-content: space-between;
+}
+
+.st-key-landing-workflow {
+  margin-top: .6rem;
+}
+
+.workflow-card {
+  min-height: 10rem;
+  padding: 1.2rem 1.3rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 5px 18px #174d8a0a;
+}
+
+.emoji-tile {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 2.8rem;
+  height: 2.8rem;
+  place-items: center;
+  border-radius: .8rem;
+  background: #eaf4ff;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+.workflow-number {
+  color: var(--muted);
+  font-size: .7rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+}
+
+.workflow-card h3 {
+  margin: 0;
+  padding: .65rem 0 .2rem;
+  font-size: 1.07rem;
+}
+
+.workflow-card p, .workspace-heading p, .chat-empty p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+.workflow-card p {
+  font-size: .92rem;
+}
+
+.st-key-landing-footer {
+  margin-top: .7rem;
+  padding-top: .65rem;
+  border-top: 1px solid var(--line);
+}
+
+.workspace-heading {
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: clamp(1rem, 3vw, 1.55rem);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: linear-gradient(105deg, #eaf4ff, #fff);
+}
+
+.workspace-heading .emoji-tile {
+  width: 3.25rem;
+  height: 3.25rem;
+  background: #fff;
+  font-size: 1.65rem;
+}
+
+.workspace-heading h1 {
+  margin: 0;
+  padding: 0 0 .15rem;
+  color: var(--ink);
+  font-size: clamp(1.75rem, 4vw, 2.65rem);
+  letter-spacing: -.05em;
+}
+
+.state-chip {
+  margin-left: auto;
+  padding: .35rem .65rem;
+  border: 1px solid #cfdbf1;
+  border-radius: 2rem;
+  color: var(--blue);
+  background: #edf3ff;
+  font-size: .81rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.sidebar-title h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.32rem;
+}
+
+.sidebar-title .file-count {
+  padding: .18rem .6rem;
+  border-radius: 999px;
+  color: var(--blue);
+  background: #eaf4ff;
+  font-size: .83rem;
+  font-weight: 750;
+}
+
+[data-testid="stFileUploaderDropzone"] {
+  border: 1px dashed #9dbce2;
+  border-radius: .7rem;
+}
+
+.st-key-workspace-chat {
+  padding: 1.15rem 1.3rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.st-key-workspace-chat h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.22rem;
+}
+
+.chat-empty {
+  padding: clamp(1.1rem, 4vw, 2.2rem) .8rem;
+  border-radius: .7rem;
+  background: linear-gradient(150deg, #f3f8ff, #edf5ff);
+  text-align: center;
+}
+
+.chat-empty strong {
+  display: block;
+  margin: .6rem 0 .25rem;
+}
+
+.chat-empty p {
+  font-size: .92rem;
+}
+
+@media (max-width: 640px) {
+  [data-testid="stMainBlockContainer"] {
+    padding-inline: 1rem;
+  }
+
+  .hero-copy {
+    font-size: .98rem;
+  }
+
+  .workflow-card {
+    min-height: auto;
+  }
+
+  .state-chip {
+    margin-left: 0;
+  }
+}
