@@ -6,7 +6,7 @@
 | --- | --- |
 | 학번 | 202235059 |
 | 이름 | 손영원 |
-| 배포 URL | [AI 성적분석 에이전트](https://english-exam-agent-n6twe7tj6owwsqvnfzartb.streamlit.app/) |
+| 배포 URL | [AI 성적분석 에이전트](https://e-exam-agent.streamlit.app/) |
 
 ## 로컬 실행
 
