@@ -67,18 +67,3 @@ python -m streamlit run streamlit_app.py
 | [question_pdf.py](exam_agent/question_pdf.py) | 문제지에서 문항 번호에 해당하는 원문 추출 |
 | [chat.py](exam_agent/chat.py) | 성적 조회, 세션 맥락, 독해 연습 문제 생성과 결과 검사 |
 | [listening.py](exam_agent/listening.py) | 이전 수능 듣기 문제지·음원 안내 |
-
-## 배포 전 검증
-
-- 제공된 파일로 10명·45문항을 채점했습니다. 브라우저에서 받은 엑셀의 총점 10개와 문항별 정오 450개가 독립 검산과 일치했습니다.
-- 실제 OpenAI API로 21번 유형의 새 문제를 세 번 생성했습니다. 원문 재사용 검사, 밑줄 표시, 선택지 5개, 정답과 해설을 확인했습니다. 응답은 각각 5.23초, 4.59초, 4.52초였습니다.
-- 브라우저에서 파일 업로드, 자동 채점, 엑셀 다운로드, 채팅 성적 조회와 같은 세션의 후속 질문을 확인했습니다.
-
-## 배포와 제출
-
-1. GitHub 저장소에 앱 코드, 화면 자산, `requirements.txt`, Streamlit 설정과 이 README를 올립니다.
-2. Streamlit Community Cloud에서 저장소와 브랜치를 선택하고 실행 파일에 `streamlit_app.py`를 지정합니다. **Advanced settings**에서 Python 3.12를 선택하고 **Secrets**에 `OPENAI_API_KEY`를 설정합니다.
-3. 공개 URL에서 두 화면과 파일 업로드, 채점, 엑셀 다운로드, 채팅을 확인합니다. 위 표에 학번, 이름, 공개 URL을 기록합니다.
-4. GitHub 저장소에 `jaypakdevkr`를 공동 작업자로 초대하고 배포 URL과 함께 제출합니다. 과제에서 정한 서비스 유지 기한은 **11월 11일 23:59**입니다.
-
-[Streamlit 배포 가이드](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy) · [GitHub 공동 작업자 초대 가이드](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository)
