@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+.streamlit/secrets.toml
+.DS_Store
+*.pdf
+*.xlsx
+*.zip
+*.log
+live_check_result.json
