@@ -4,9 +4,9 @@
 
 | 제출 정보 | 값 |
 | --- | --- |
-| 학번 | 입력 대기 |
-| 이름 | 입력 대기 |
-| 배포 URL | 배포 후 입력 |
+| 학번 | 202235059 |
+| 이름 | 손영원 |
+| 배포 URL | [AI 성적분석 에이전트](https://english-exam-agent-n6twe7tj6owwsqvnfzartb.streamlit.app/) |
 
 ## 로컬 실행
 
